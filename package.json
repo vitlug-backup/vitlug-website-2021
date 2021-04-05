@@ -1,0 +1,24 @@
+{
+  "name": "vitlug-website-2021",
+  "version": "1.0.0",
+  "description": "Website and blog for vit-lug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitlug-official/vitlug-website-2021.git"
+  },
+  "author": "VIT-LUG",
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/vitlug-official/vitlug-website-2021/issues"
+  },
+  "homepage": "https://github.com/vitlug-official/vitlug-website-2021#readme",
+  "dependencies": {
+    "gatsby": "^3.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
