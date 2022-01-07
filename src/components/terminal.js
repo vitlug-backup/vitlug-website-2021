@@ -1,11 +1,5 @@
 import React from "react"
 import { ReactTerminal } from "react-terminal";
-import styled from "styled-components"
-
-const UserTerminal = styled.section`
-  border-radius: 10px;
-  max-width: 800px;
-`
 
 const commands = {
     board: () => {
@@ -111,14 +105,12 @@ const commands = {
 
 const Terminal = () => {
     return (
-        <UserTerminal id="terminal">
-            <ReactTerminal
-                prompt="[user@vitlug]$"
-                commands={commands}
-                theme="material-ocean"
-                errorMessage="Command not found, try typing 'help'"
-            />
-        </UserTerminal>
+        <ReactTerminal
+            prompt="[user@vitlug]$"
+            commands={commands}
+            theme="material-ocean"
+            errorMessage="Command not found, try typing 'help'"
+        />
     )
 }
 

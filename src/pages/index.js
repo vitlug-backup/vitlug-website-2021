@@ -81,7 +81,11 @@ const IndexPage = () => {
             <SectionHeading>Contact Us</SectionHeading>
           </SubSection>
 
-          <Terminal />
+          <SubSection id="terminal">
+            <SectionHeading>Aye fellow CLI addict! :)</SectionHeading>
+            <Terminal />
+          </SubSection>
+          
         </Wrapper>
       </Fragment>
     </TerminalContextProvider>
