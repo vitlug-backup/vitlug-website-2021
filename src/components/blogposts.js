@@ -5,7 +5,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 const BlogContainer = styled.section`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     cursor: pointer;
     margin-top: 3rem;
