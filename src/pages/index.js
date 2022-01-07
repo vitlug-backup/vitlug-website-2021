@@ -6,6 +6,7 @@ import { TerminalContextProvider } from "react-terminal";
 import Header from "../components/header"
 import Terminal from "../components/terminal"
 import BlogPosts from "../components/blogposts"
+import Board from "../components/board"
 
 
 const SectionHeading = styled.h1`
@@ -67,7 +68,8 @@ const IndexPage = () => {
           </SubSection>
 
           <SubSection id="board">
-            <SectionHeading>Board 2022</SectionHeading>
+            <SectionHeading>Board Members 2022</SectionHeading>
+            <Board />
           </SubSection>
 
           <SubSection id="projects">

@@ -8,6 +8,7 @@ const BlogContainer = styled.section`
     justify-content: space-between;
     flex-wrap: wrap;
     cursor: pointer;
+    margin-top: 3rem;
 `
 
 const PostCard = styled.div`
@@ -59,7 +60,7 @@ export default function BlogPosts() {
         <StaticQuery
             query={graphql`
                 query {
-                    allMediumPost(limit: 5, sort: {fields: createdAt, order: DESC}) {
+                    allMediumPost(limit: 6, sort: {fields: createdAt, order: DESC}) {
                     edges {
                         node {
                         id
