@@ -44,9 +44,10 @@
   
 - name: Kartik Gupta
   position: Publicity Head
-  image: board/linux-avatar.png
-  linkedin: 
-  github: 
+  image: board/kartik.jpeg
+  linkedin: https://www.linkedin.com/in/kartik-gupta-b74435203/
+  github: https://github.com/nitrobang
+  instagram: https://www.instagram.com/kartik0970/
 
 - name: Pulkit Chahar
   position: Management Head
