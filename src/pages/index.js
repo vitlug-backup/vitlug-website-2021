@@ -7,6 +7,7 @@ import Header from "../components/header"
 import Terminal from "../components/terminal"
 import BlogPosts from "../components/blogposts"
 import Board from "../components/board"
+import Projects from "../components/projects"
 
 
 const SectionHeading = styled.h1`
@@ -61,9 +62,9 @@ const IndexPage = () => {
 
           <SubSection id="blog">
             <SectionHeading>
-              Blog Posts{" "} 
+              Blog Posts{" "}
               <SubSectionLink href="https://medium.com/vit-linux-user-group" target="_blank"><small>(View All)</small></SubSectionLink>
-              </SectionHeading>
+            </SectionHeading>
             <BlogPosts />
           </SubSection>
 
@@ -73,7 +74,11 @@ const IndexPage = () => {
           </SubSection>
 
           <SubSection id="projects">
-            <SectionHeading>Projects</SectionHeading>
+            <SectionHeading>
+              Projects{" "}
+              <SubSectionLink href="https://github.com/orgs/vitlug/repositories?type=all" target="_blank"><small>(View All)</small></SubSectionLink>
+            </SectionHeading>
+            <Projects />
           </SubSection>
 
 
@@ -85,7 +90,7 @@ const IndexPage = () => {
             <SectionHeading>Aye fellow CLI addict! :)</SectionHeading>
             <Terminal />
           </SubSection>
-          
+
         </Wrapper>
       </Fragment>
     </TerminalContextProvider>
