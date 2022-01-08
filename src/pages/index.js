@@ -39,6 +39,14 @@ const SubSectionLink = styled.a`
   }
 `
 
+const Footer = styled.footer`
+  text-align: center;
+  margin-bottom: 2rem;
+  h3 {
+    font-weight: 300;
+  }
+`
+
 // markup
 const IndexPage = () => {
   return (
@@ -90,6 +98,10 @@ const IndexPage = () => {
             <SectionHeading>Aye fellow CLI addict! :)</SectionHeading>
             <Terminal />
           </SubSection>
+
+          <Footer>
+            <h3>Made with ❤️ by VIT-LUG</h3>
+          </Footer>
 
         </Wrapper>
       </Fragment>
