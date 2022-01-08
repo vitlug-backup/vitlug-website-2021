@@ -12,15 +12,13 @@ import Projects from "../components/projects"
 
 const SectionHeading = styled.h1`
   margin-top: 0;
-  margin-bottom: 64;
-  max-width: 320;
   text-align: center;
 `
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.section`
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 960px;
 `
 
 const SubSection = styled.section`

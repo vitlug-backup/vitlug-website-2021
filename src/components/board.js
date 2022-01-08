@@ -17,7 +17,7 @@ const PostCard = styled.div`
 
   padding: 1.5rem;
   flex: 0 1 calc(23% - 1rem);
-  margin: 0.5rem;
+  margin: 1.5rem 0.5rem;
   color: #282828;
 `
 
