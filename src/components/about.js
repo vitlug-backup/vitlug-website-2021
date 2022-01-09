@@ -1,23 +1,98 @@
 import React from 'react'
-import {about} from './CSS/about.module.css'
+import styled from "styled-components"
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { StaticImage } from 'gatsby-plugin-image'
+
+
+const AboutContainer = styled.div`
+    display: flex;
+
+    @media (max-width: 600px) {
+        flex-direction: column;  
+        flex-direction: column-reverse;
+    }   
+`
+
+const AboutText = styled.div`
+    margin-inline: 50px;
+    font-size: 18px;
+    // font-family: 'Courier New', Courier, monospace;
+`
+
+const ImgSlider = styled.div`
+    width: 360px;
+    height: 360px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 1.5rem auto;
+
+    img {
+        width: 360px;
+        height: 360px;
+        border-radius: 5px;
+    }
+
+    div {
+        border-radius: 5px; 
+    }
+`
 
 const About = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        fade: true
+    };
     return (
-        <div className={about}>
-            <p>
-                Founded in the year 2019, VIT Linux Users Group is small started
-                with the goal to promote the use of Linux and Open Source, to educate 
-                the community on these software alternatives, and to support and provide
-                a social network for local Linux Users.
-            </p>
-            <p>    
-                VITLUG conducts events on the use of Open Source Software which are
-                open to non-club members as well. We also publish blogs on medium 
-                and actively undertake building projects related to Linux, notable 
-                mentions of which include Arcadia Linux, an arch based Linux distro under 
-                development and tasveer.  
-            </p>
-        </div>
+        <AboutContainer>
+            <AboutText>
+                <p>
+                    Founded in the year 2019, VIT Linux Users Group is small student community started
+                    with the goal to promote the use of Linux and Open Source Software, we strive to educate
+                    the student community on open source software alternatives, and to support and provide
+                    a social network for local Linux users.
+                </p>
+                <p>
+                    VIT-LUG conducts events on the use of Open Source Software which are
+                    open to non-club members as well. We publish blogs on medium
+                    and actively undertake building projects related to Linux, notable
+                    mentions of which include Arcadia Linux, an Arch based Linux distro.
+                </p>
+            </AboutText>
+            <ImgSlider>
+                <Slider {...settings}>
+                    <div>
+                        <StaticImage
+                            alt="About Image 1"
+                            src="../images/about/land_a.jpg"
+                        />
+                    </div>
+                    <div>
+                        <StaticImage
+                            alt="About Image 2"
+                            src="../images/about/land_b.jpg"
+                        />
+                    </div>
+                    <div>
+                        <StaticImage
+                            alt="About Image 3"
+                            src="../images/about/land_c.jpg"
+                        />
+                    </div>
+                    <div>
+                        <StaticImage
+                            alt="About Image 4"
+                            src="../images/about/land_d.jpg"
+                        />
+                    </div>
+                </Slider>
+            </ImgSlider>
+        </AboutContainer>
     )
 }
 
