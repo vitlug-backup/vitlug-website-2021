@@ -8,6 +8,8 @@ import Terminal from "../components/terminal"
 import BlogPosts from "../components/blogposts"
 import Board from "../components/board"
 import Projects from "../components/projects"
+import About from "../components/about"
+import Contacts from "../components/contacts"
 
 
 const SectionHeading = styled.h1`
@@ -64,6 +66,7 @@ const IndexPage = () => {
 
           <SubSection id="about">
             <SectionHeading>About Us</SectionHeading>
+            <About />
           </SubSection>
 
           <SubSection id="blog">
@@ -90,6 +93,7 @@ const IndexPage = () => {
 
           <SubSection id="contact">
             <SectionHeading>Contact Us</SectionHeading>
+            <Contacts />
           </SubSection>
 
           <SubSection id="terminal">
