@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { StaticImage } from 'gatsby-plugin-image'
 
 
 const AboutContainer = styled.div`
@@ -67,27 +66,27 @@ const About = () => {
             <ImgSlider>
                 <Slider {...settings}>
                     <div>
-                        <StaticImage
-                            alt="About Image 1"
-                            src="../images/about/land_a.jpg"
+                        <img
+                            alt="About 1"
+                            src="about/land_a.jpg"
                         />
                     </div>
                     <div>
-                        <StaticImage
-                            alt="About Image 2"
-                            src="../images/about/land_b.jpg"
+                        <img
+                            alt="About 2"
+                            src="about/land_b.jpg"
                         />
                     </div>
                     <div>
-                        <StaticImage
-                            alt="About Image 3"
-                            src="../images/about/land_c.jpg"
+                        <img
+                            alt="About 3"
+                            src="about/land_c.jpg"
                         />
                     </div>
                     <div>
-                        <StaticImage
-                            alt="About Image 4"
-                            src="../images/about/land_d.jpg"
+                        <img
+                            alt="About 4"
+                            src="about/land_d.jpg"
                         />
                     </div>
                 </Slider>
