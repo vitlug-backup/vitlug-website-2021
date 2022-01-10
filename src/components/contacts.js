@@ -4,7 +4,8 @@ import styled from "styled-components"
 const ContactList = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-inline: 150px;
+    flex-wrap: wrap;
+    margin: 0 5rem;
 
     img {
         width: 64px;
