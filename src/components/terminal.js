@@ -79,6 +79,53 @@ const commands = {
             </span>
         );
     },
+    events: () => {
+        return (
+            <span>
+                No events scheduled right now :(
+                <br />
+                Come back in a couple of days?
+            </span>    
+        );
+    },
+    social: () => {
+        return (
+            <span>
+                <br />
+                <br />
+                <span >
+                    <strong>&emsp;Mail To:&emsp;</strong>
+                    <span >&emsp;&emsp;&emsp;linux@vit.ac.in</span>
+                </span>
+                <br />
+                <span >
+                    <strong>&emsp;Instagram&emsp;</strong>
+                    <span >&emsp;&emsp;&ensp;<a href="https://www.instagram.com/vit_lug/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/vit_lug/</a></span>
+                </span>
+                <br />
+                <span >
+                    <strong>&emsp;Discord&emsp;</strong>
+                    <span >&emsp;&emsp;&emsp;&emsp;<a href="https://discord.gg/gF8fV84Zg6" target="_blank" rel="noopener noreferrer">https://discord.gg/gF8fV84Zg6</a></span>
+                </span>
+                <br />
+                <span >
+                    <strong>&emsp;Twitter&emsp;</strong>
+                    <span >&emsp;&emsp;&emsp;&emsp;<a href="https://twitter.com/vitlug" target="_blank" rel="noopener noreferrer">https://twitter.com/vitlug</a></span>
+                </span>
+                <br />
+                <span >
+                    <strong>&emsp;Linkedin&emsp;</strong>
+                    <span >&emsp;&emsp;&emsp;<a href="https://www.linkedin.com/company/vit-linux-user-group/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/company/vit-linux-user-group/</a></span>
+                </span>
+                <br />
+                <span >
+                    <strong>&emsp;Github&emsp;</strong>
+                    <span >&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/vitlug" target="_blank" rel="noopener noreferrer">https://github.com/vitlug</a></span>
+                </span>
+                <br />
+            </span>    
+        );
+    },
     help: () => {
         return (
             <span>
