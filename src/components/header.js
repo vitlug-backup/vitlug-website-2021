@@ -13,6 +13,7 @@ const NavList = styled.ul`
   align-items: center; 
   justify-content: space-around;
   list-style-type: none;
+  padding: 0;
 
   @media (max-width: 520px) {
     flex-direction: column;  

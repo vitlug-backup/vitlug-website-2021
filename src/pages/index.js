@@ -13,8 +13,9 @@ import Contacts from "../components/contacts"
 
 
 const SectionHeading = styled.h1`
-  margin-top: 0;
+  margin: 0 auto 2rem auto;
   text-align: center;
+  font-size: 20px;
 `
 
 // Create a Wrapper component that'll render a <section> tag with some styles
